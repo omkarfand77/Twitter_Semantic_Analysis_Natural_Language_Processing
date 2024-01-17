@@ -29,21 +29,31 @@ Class: The respective class to which the tweet belongs. There are 4 classes -:
 ## **Exloratory Data Analysis (EDA)**
 
 By applying Bag of Words, TF-IDF and unigram, Bigram, Trigram Extracted max 200 feature showed graphical representation with Wordcloud, histogram and barplot.
-**Feature Engineering and Feature Selection**
-The Word2vec transformation of tweet performed with genism model to In Feature
 
 ## **Word Embedding**
+**Word2Vec**: The conversion of tweets text data is performed to understand the context of words
+in text data from which the relevant class of data can be detrmined. 
+For the Vectorization of words the glove's pretrained model is used.
+
+**Feature Engineering and Feature Selection**
+After the Vectorization of text data further it is classified into dependant and independant form.
+Here dependant is class of data and independant is tweet. The MinMax Scaler is applied to normalize
+the training data of a Machine Learning model, i.e. to bring the numerical values to a uniform scale.
+next the dataset is splitted into the train_test split for evaluation of model performance in 80:20 ratio.
+
 
 ## **Model Building**
-
-Classification Model:Multi-class Classifier.
-
+**Machine Learning**
+Classification Model (Multi-class Classifier):
 1. SVM
 2. K-Nearest Neighbours
 3. Kernel SVM
 4. Naïve Bayes
 5. Decision Tree Classification
 6. Random Forest Classification
+
+**Deep Learning** 
+Artificial Neural Network: For bettwe performance of model accuracy and accurate prediction kearas sequential model building performed.
 
 ## **Model Evaluation**
 
@@ -52,6 +62,9 @@ Classification Model:Multi-class Classifier.
 3. AUC-ROC curve:
 
 ## **Model Selection**
+On basis of accuracy score and relavent model predicton the kearas sequential model is used for deployment.
+For deployment we made model pickle file as model.pkl. 
 
 ## **Deployment**
-
+The Deployment is made throught flask on local host. The file app.py contain required for code of requesting text data and predicting
+relevant class of tweet.
