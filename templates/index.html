@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Twitter Semantic Analysis</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            height: 100vh;
+            display: flex;
+            background-image: url('Untitled.png'); /* Update with your image file's path */
+            background-size: cover;
+            font-family: 'Georgia', sans-serif;
+            color: #fff;
+        }
+
+        img {
+            border-radius: 70%;
+        }
+        .container {
+            display: flex;
+            justify-content: space-between;
+            align-items: center; /* Center vertically */
+        }
+
+        .input-container {
+            text-align: center;
+            justify-items: center;
+            background-color: rgba(0, 0, 0, 0.3);
+            padding: 70px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.9);
+            max-width: 700px; /* Set a maximum width for better readability */
+            width: 70%; /* Adjust the width as needed */
+        }
+
+        .info-container {
+            text-align: left;
+            padding: 30px;
+            max-width: 100%; /* Adjust the width as needed */
+            background-color: rgba(3, 86, 211, 0.678);
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.9);
+        }
+
+        input[type="text"] {
+            padding: 10px;
+            border: none;
+            border-radius: 4px;
+            width: 300px;
+            margin-bottom: 10px;
+        }
+
+        input[type="submit"] {
+            padding: 10px 20px;
+            border: none;
+            border-radius: 4px;
+            background-color: #e44d26; /* Your preferred color for the button */
+            color: #fff;
+            cursor: pointer;
+        }
+
+        h1 {
+            margin: 10;
+            font-size: 24px;
+        }
+
+        h2 {
+            margin-top: 10px;
+            font-size: 14px;
+        }
+
+        p {
+            font-size: 12px;
+            line-height: 1.25;
+            margin-bottom: 10px;
+        }
+
+        ul {
+            list-style-type: none;
+            padding: 0;
+            margin: 0;
+        }
+
+        li {
+            font-size: 12px;
+            margin-bottom: 3px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="info-container">
+            <h1>Natural Language Processing Project</h1>
+            <img src="Omkar Photo.jpg" alt="Paris" width="125" height="125">
+            <h1> Mr. Omkar S. Fand</h1>
+            <h2>About:</h2>
+            <p>This NLP project focuses on sentiment analysis of tweets, classifying them into four categories: </p>
+            <p>
+                <li>Regular</li>
+                <li>Sarcasm</li>
+                <li>Figurative (both irony and sarcasm)</li>
+                <li>Irony</li>
+            </p>
+            <p>By inputting a tweet, the model predicts the corresponding class,<br>
+            enabling nuanced understanding of sentiment in social media discourse.<br>
+            Leveraging advanced techniques like tokenization, word embeddings, and transformer architectures,<br>
+            the model offers accurate predictions.</p>
+        </div>
+        <div class="input-container">
+            <h1>Twitter Semantic Analysis</h1>
+            <form action="/predict" method="post">
+                <input type="text" name="text_input" placeholder="Enter your tweet...">
+                <br>
+                <input type="submit" value="Predict">
+            </form>
+        </div>
+    </div>
+</body>
+</html>
