@@ -1,5 +1,4 @@
 from flask import Flask, render_template, request
-import gensim
 from gensim.models import KeyedVectors
 import pickle
 import nltk
@@ -67,5 +66,5 @@ def predict():
     predicted_class = preprocess_and_predict(text_input)
     return render_template('result.html', text_input=text_input, predicted_class=predicted_class)
 
-if __name__ == '__main__':
-    app.run()
+#if __name__ == '__main__':
+    #app.run()
