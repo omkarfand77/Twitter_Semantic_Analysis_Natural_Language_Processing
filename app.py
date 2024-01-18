@@ -1,4 +1,5 @@
 from flask import Flask, render_template, request
+import gensim
 from gensim.models import KeyedVectors
 import pickle
 import nltk
