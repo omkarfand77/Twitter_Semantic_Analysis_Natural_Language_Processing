@@ -31,7 +31,7 @@ Class: The respective class to which the tweet belongs. There are 4 classes -:
 By applying `Bag of Words`, TF-IDF and unigram, Bigram, Trigram Extracted max 200 feature showed graphical representation with Wordcloud, histogram and barplot.
 
 ## **Word Embedding**
-**Word2Vec**: The conversion of tweets text data is performed to understand the context of words
+`**Word2Vec**`: The conversion of tweets text data is performed to understand the context of words
 in text data from which the relevant class of data can be detrmined. 
 For the Vectorization of words the glove's pretrained model is used.
 
