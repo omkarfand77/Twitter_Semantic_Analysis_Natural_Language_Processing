@@ -15,17 +15,20 @@ import os
 import string
 
 st.title('TWITTER SEMANTIC ANALYSIS')
-with st.sidebar:
-    st.write('''A Natural Language Processing Project by
-    Mr. OMKAR S. FAND 
-    The Data Contains following Coloumns:
-Tweet: The text of the tweet
-Class: The respective class to which the tweet belongs. There are 4 classes -:
+with st.container():
+    with st.sidebar:
+        st.header('**:red[NATURAL LANGUAGE PROCESSING PROJECT]**',  divider='rainbow')
+        st.write('MR. OMKAR SUNILDATT FAND')
+        st.page_link("https://www.linkedin.com/in/mr-omkar-s-fand-043755149", label=":blue[LinkedIn]")
+        st.page_link("http://www.gmail.com/", label="E-mail: omkarfand77@gmail.com")
+        st.write('''The Data Contains following Coloumns:
+    Tweet: The text of the tweet
+    Class: The respective class to which the tweet belongs. There are 4 classes -:
 
-1. Regular
-2. Sarcasm
-3. Figurative (both irony and sarcasm)
-4. Irony''')
+    1. Regular
+    2. Sarcasm
+    3. Figurative (both irony and sarcasm)
+    4. Irony''')
 
 # Load the model
 with open('model.pkl', 'rb') as load:
