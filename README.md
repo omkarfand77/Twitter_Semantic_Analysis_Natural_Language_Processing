@@ -52,19 +52,23 @@ Classification Model (Multi-class Classifier):
 5. Decision Tree Classification
 6. Random Forest Classification
 
-**Deep Learning** 
+**Deep Learning**
 Artificial Neural Network: For bettwe performance of model accuracy and accurate prediction kearas sequential model building performed.
 
 ## **Model Evaluation**
 
-1. Log Loss or Cross-Entropy Loss
+1. classification report
 2. Confusion Matrix:
-3. AUC-ROC curve:
+
+Model evaluated on basis of classification report and condusion matrix.
+In classification report models f1 and accuracy score of model calcuated over test data.
 
 ## **Model Selection**
+
 On basis of accuracy score and relavent model predicton the kearas sequential model is used for deployment.
-For deployment we made model pickle file as model.pkl. 
+For deployment made model pickle file as model.pkl.
 
 ## **Deployment**
+
 The Deployment is made throught flask on local host. The file app.py contain required for code of requesting text data and predicting
 relevant class of tweet.
